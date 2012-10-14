@@ -1,14 +1,105 @@
-\documentclass[11pt,letterpaper]{article}
-\usepackage[NoDate]{currvita}
-\usepackage{fullpage,mathpazo,hyperref,xcolor,graphicx}
-\renewcommand{\cvheadingfont}{\bfseries\itshape\Huge}
-\renewcommand{\cvlistheadingfont}{\bfseries\itshape\Large}
-\hypersetup{colorlinks,breaklinks,urlcolor=cyan,linkcolor=cyan}
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage[spanish]{babel}
+\usepackage[dvips]{epsfig}  
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{tabularx}
+\usepackage{url}
+\usepackage{pslatex}
 
 
+     \topmargin -1 cm
+     \textheight 23 cm
+     \hoffset -1.5 cm
+     
+\pagestyle{empty}
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}  
+\let\PBS=\PreserveBackslash
+%\renewcommand{\familydefault}{ccr}
+    
 \begin{document}
-\begin{cv}{Carlos Alfredo Ram\'irez Mera}
+
+%%%%%%% Titulo
+\begin{tabular}{c >{\PBS\centering\vspace{-2,7cm}}p{11,5cm} c}
+  & \rule{11,5cm}{0.7pt} \newline \newline
+ \textbf{\textsc{{\Large Carlos Ramirez Mera} }}\newline
+ \rule{11,5cm}{0.7pt} & \newline
+ \epsfig{file=CV.eps,width=70pt}
+\end{tabular} 
+
+\section{Informacion Personal}
+
+\begin{tabular}{lll}
+  \textbf{Fecha de Nacimiento} & : & 15 de Mayo, 1991\\ \\
+  
+  \textbf{Cédula de Identidad} & : & 0909673600\\\\
+  
+  \textbf{Domicilio} & : & San Martin 1510 y Machala,\\
+  &&Guayaquil,Ecuador\\ \\
+  
+  \textbf{Estado civil} & : & Soltero\\ \\
+  
+  \textbf{Profesión} & : & Estudiante Ing Computacion Multimedia ESPOL \\
+  
+  \textbf{Celular} & : & 0929006385\\ \\
+
+  \textbf{Email} & : & \url{cararami@espol.edu.ec}\\ \\ 
+
+ \end{tabular}
+
+%%%%% ESTUDIOS
+\section{Estudios Realizados}
+
+\begin{tabular}{lll}
+\textbf{Estudios Secundarios}&:& Unidad Educativa San Agustin,\\
+Guayaquil,Ecuador\\ \\
+
+\textbf{Estudios Universitarios}&:& 3er Año - ESPOL\\ 
+(2009 - 2012) & & Guayaquil, Ecuador\\
+\end{tabular}
+
+%%%%% INTERESES
+\subsection{Otros conocimientos}
+\begin{tabular}{lll}
+
+\textbf{Lenguajes Programación}&:&HTML, PHP, JavaScript, Shell-Scripts, \\
+&&  SQL, \LaTeXe\\ \\
+
+\textbf{Administración de Bases de datos}&:&MySQL, PostrgreSQL\\ \\
+
+\end{tabular}
 
 
-\end{cv}
+\newpage
+%%%%%% EXPERIENCIA LABORAL
+\section{Experiencia Laboral}
+
+\begin{tabular}{lll}
+\textbf{Jul. 2009 a Mar. 2010}&:& Asistente de Programacion \\
+&& Soluciones Informaticas \textit{SOLINFOR}\\
+&& \url{http://www.solinfor.cl}\\ \\
+
+\textbf{May. 2010 a Oct. 2011}&:& Ayudante de Laboratotio \\
+&& \textit{Universidad Estatal}\\
+&& \url{http://acs.inf.utfsm.cl}\\ \\
+
+\end{tabular}
+
+%%%%%% REFERENCIAS PERSONALES
+\section{Antecedentes Personales}
+\begin{tabular}{lll}
+\textbf{Alfredo Ramirez Alvarado \\
+&&Ingeniero en Marketing\\
+&&email: \url{alramirez67@hotmail.com}\\
+&&fono: (32) 654239\\ \\
+
+\textbf{Percy Glaves}&:& Ingeniero civil Químico.\\
+&&Ingeniero Informático\\
+&&email: \url{pglaves@hotmail.es}\\ \\
+
+\end{tabular}
+
+\vspace{\fill}
+  CV/ \LaTeXe
 \end{document}
